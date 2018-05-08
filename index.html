@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+    <style>
+        body {
+            margin: 0;
+            background-image: url(/assets/tiltshift-bg-angled.svg);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<style>
+    .fixed {
+        position: fixed;
+        z-index: 101;
+        width: 100%;
+        top: 0;
+    }
+    .spaced {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+    @media screen and (min-width: 890px) {
+        .spaced {
+            width: 800px;
+            margin: auto;
+        }
+    }
+</style>
+
+<div class="fixed">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Roboto:300,400,500,700,900" rel="stylesheet">
+<style>
+    .ts__nav {
+        font-family: 'Merriweather', serif;
+        font-size: 100%;
+        width: 100%;
+        height: 160px;
+    }
+    .ts__nav .white-bar {
+        position: absolute;
+        top: 0;
+        background: white;
+        width: 100%;
+        height: 88px;
+        opacity: .95;
+    }
+    .ts__nav .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .ts__nav .logo {
+        margin-left: 50px;
+    }
+    .ts__nav img {
+        width: 240px;
+    }
+    .ts__nav .hamburger {
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .ts__nav .hamburger-line {
+        height: 4px;
+        width: 100%;
+        background: #464646;
+        margin-bottom: 4px;
+    }
+    .ts__nav a {
+        text-decoration: none;
+    }
+    .ts__nav .hamburger-text {
+        font-weight: 300;
+        line-height: 1.9em;
+        color: #464646;
+        font-size: 0.9em;
+    }
+    .ts__nav .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        color: #fff;
+        opacity: 0.9;
+        z-index: 1000;
+    }
+    @media screen and (max-width: 400px) {
+        .ts__nav img {
+            width: 180px;
+        }
+    }
+</style>
+<nav class="ts__nav">
+    <div class="white-bar"></div>
+    <div class="header">
+        <div class="hamburger" onclick="document.getElementById('ts__nav__menu').style.display='block'">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-text">menu</div>
+        </div>
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/tiltshift-banner.svg">
+            </a>
+        </div>
+    </div>
+    <div id="ts__nav__menu" class="menu" style="display: none">
+        <div class="layout-menu"> <div class="layout-theme"> <div class="bigtheme"> <h2 class="bigtheme-header">Thema's</h2> <div class="bigtheme-links"> <a href="/trajecten" class="bigtheme-item">Nieuwe digitale diensten</a> <a href="/fix-methode" class="bigtheme-item">De Fix methode</a> <a href="/inhouse-teams" class="bigtheme-item">In-house teams</a> </div> </div> </div> <div class="layout-contact"> <div class="contact"> <h3 class="contact-title">Contact</h3> <div class="contact-text"> <p><span class="tel">T</span> <b>+31 (0)20 722 02 07</b><br> info@tiltshift.nl</p> <p><b>TiltShift Hoofdkantoor</b><br> Baarsjesweg 194D<br> 1057 HR Amsterdam<br> KvK 68994222</p> <p><b>TiltShift Financiën</b><br> Burg. de Josselin de Jonglaan 8<br> 3042 NH Rotterdam</p> </div> </div> </div> </div>
+    </div>
+</nav></div>
+
+<div class="spaced" style="margin-top: 200px">
+    <style>
+    .ts__intro {
+        font-family: 'Merriweather', serif;
+        font-size: 100%;
+    }
+    .ts__intro-h1 {
+        font-weight: 500;
+        font-size: 2.5em;
+        line-height: 1.2em;
+        margin-bottom: 12px;
+        color: #3c3c3c;
+    }
+    .ts__intro-h1-span {
+        color: #EF3931;
+    }
+    .ts__intro-h2 {
+        font-weight: 100;
+        font-size: 1.8em;
+        line-height: 1.4em;
+        margin-bottom: 40px;
+        color: #3c3c3c;
+    }
+    .ts__intro-p {
+        font-weight: 300;
+        font-size: 1.1em;
+        line-height: 1.9em;
+        color: #464646;
+        margin-bottom: 18px;
+        max-width: 40em;
+    }
+    .ts__intro-a {
+        line-height: 2em;
+        color: #EF3931;
+        color: inherit;
+        font-weight: 500;
+    }
+    .ts__intro-button {
+        font-weight: 300;
+        font-size: 1.1em;
+        line-height: 1.9;
+        color: #464646;
+        border: 2px solid #464646;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 1em;
+    }
+</style>
+<div class="ts__intro">
+    <h1 class="ts__intro-h1">De <span class="ts__intro-h1-span">Fixxx®</span> methode</h1>
+    <h2 class="ts__intro-h2">voor snelle innovatie die werkt!</h2>
+    <p class="ts__intro-p">Fixxx is een innovatiemethode voor (Nederlandse) gemeenten, die sinds 2015 succesvol wordt ingezet.</p>
+    <p class="ts__intro-p">In een traject van 14 weken maakt een gemengd team van techneuten en uitvoerende ambtenaren een werkende oplossing voor een tastbaar probleem.</p>
+    <p class="ts__intro-p">Fixxx is door <a class="ts__intro-a" ref="https://www.tiltshift.nl">TiltShift</a> ontwikkeld in samenwerking met de gemeente Amsterdam. De methode combineert elementen uit Design Thinking, Service Design, Lean Startup en Venture Design.</p>
+    <a class="ts__intro-button" href="/voorbeelden">Voorbeelden</a>
+    <h2 class="ts__intro-h2">Datalab Amsterdam</h2>
+    <p class="ts__intro-p">Binnen de gemeente Amsterdam worden Fixxx trajecten aangeboden via het Datalab Amsterdam van de RvE Onderzoek, Informatie en Statistiek.</p>
+    <a class="ts__intro-button" href="/datalab-amsterdam">Fixxx aanvragen gemeente Amsterdam</a><br>
+    <h2 class="ts__intro-h2">Andere gemeenten</h2>
+    <p class="ts__intro-p">Bij andere gemeenten worden Fixxx trajecten direct via TiltShift aangeboden. Ook aan de slag met Fixxx?</p>
+    <a class="ts__intro-button" href="/aanvragen">Fixxx aanvragen andere gemeenten</a>
+</div>
+</div>
+
+<div>
+    <style>
+    .ts__roll {
+        position: relative;
+        width: 100%;
+    }
+    .ts__roll img {
+        float: left;
+        width: 25%;
+    }
+    @media screen and (max-width: 840px) {
+        .ts__roll img {
+            width: 50%;
+        }
+    }
+</style>
+<div class="ts__roll">
+    <img src="/assets/clean-1c82bd09283573c006a557c1953131a2.jpg">
+    <img src="/assets/fix2-838a452e26f2178bc3b0f68cde784037.jpg">
+    <img src="/assets/fix4-e2206e467b40e62718c8494a97781e84.jpg">
+    <img src="/assets/fix5-5b18804c362a8568e5cb24157a543a7b.jpg">
+    <div style="clear: both"></div>
+</div></div>
+
+<div class="spaced">
+    <style>
+    .ts__sectie {
+        font-family: 'Merriweather', serif;
+        font-size: 100%;
+    }
+    .ts__sectie a {
+        line-height: 1.9em;
+    }
+    .ts__sectie h2 {
+        font-size: 1.8em;
+        font-weight: 100;
+        color: #3c3c3c;
+        line-height: 1.2em;
+        margin-bottom: 12px;
+    }
+    .ts__sectie h3 {
+        font-size: 1.2em;
+        font-weight: 700;
+        color: #3c3c3c;
+        line-height: 1.2em;
+        margin-bottom: 12px;
+    }
+    .ts__sectie p {
+        font-size: 1.1em;
+        font-weight: 300;
+        color: #464646;
+        max-width: 40em;
+        margin-bottom: 12px;
+    }
+</style>
+<div class="ts__sectie">
+    <h2>Uitgangspunten</h2>
+    <p></p>
+    <h3>Get out of the building</h3>
+    <p>Binnen vind je alleen aannames. Ga naar buiten, test je assumpties. Praat met de eindgebruikers van je product, kijk hoe ze het in het echt gebruiken en loop eens een middagje mee.</p>
+    <h3>Snelle iteraties</h3>
+    <p>Niks is in één keer goed. Maak zo snel mogelijk iets dat werkt, en test het in de praktijk. Zelfs negatieve feedback is beter dan niks. Leer ervan en verbeter je product.</p>
+    <h3>Alles is inspiratie</h3>
+    <p>Als iets niet meer werkt, dan verander je het. Een test met negatief resultaat is ook leerzaam.</p>
+    <h3>Niet breken maar buigen</h3>
+    <p>Mensen krijg je mee door ze te ondersteunen, niet door ze te dwingen. Door problemen op te lossen kun je ze op een andere manier laten werken.</p>
+    <h3></h3>
+</div>
+<div class="ts__sectie">
+    <h2>Intake en selectie</h2>
+    <h3>Is er een écht probleem?</h3>
+    <h3>Is er mandaat voor verandering?</h3>
+    <h3>Is er de juiste scope?</h3>
+    <p></p>
+    [plaatje]
+</div>
+<div class="ts__sectie">
+    <h2>1. Discovery</h2>
+    <p>We beginnen bij het begin. Wat is er precies aan de hand? Wie heeft last van het probleem en wat is de omgeving? Door zelf mee te lopen met werknemers en stakeholders te interviewen, krijgen we een eigen beeld van de problematiek. In deze fase maken we empathy maps, probleemclusters en waar mogelijk customer journeys.</p>
+</div>
+<div class="ts__sectie">
+    <h2>2. Ideation</h2>
+    <p>Op basis van de uitkomst van de Discovery fase, gaan we ideeën verzinnen om de individuele problemen die we hebben gevonden, op te lossen. Daarvoor maken we een lijst met zoveel mogelijk kleine oplossingen die een concreet probleem oplossen. Mochten we in deze fase tot de conclusie komen dat een niet-technische oplossing beter is, dan geven we dat aan. Het traject kan dan overgedragen of gestaakt worden. Dat scheelt onnodig te besteden tijd en geld.</p>
+</div>
+<div class="ts__sectie">
+    <h2>3. Development</h2>
+    <p>Nadat we samen met de product owner (de klant) hebben gekozen voor de eerste stap, gaan we aan de slag. We bouwen een toepassing binnen twee weken en gaan direct testen in de praktijk. Wat we ondervinden in het gebruik in de praktijk, verwerken we in de eerstvolgende versie. Zo voorkomen we dat we tijd spenderen aan oplossingen die geen binding met de werkelijheid hebben.</p>
+</div>
+<div class="ts__sectie">
+    <h2>4. Delivery</h2>
+    <p>We leveren werkende oplossingen, geen ideeen of prototypes. De doorontwikkeling kunnen we zelf verzorgen of overdragen aan een interne afdeling of externe partij. Door mensen uit de organisatie op te leiden tot scrummasters, kunnen werknemers de doorontwikkeling zelf oppakken. Duurzaamheid is daarbij belangrijk.</p>
+</div>
+<div class="ts__sectie">
+    <h2>Eerdere projecten</h2>
+    <p>
+        <a href="/voorbeelden/markt">Makkelijke Markt</a><br>
+        <a href="/voorbeelden/melden">Overlast Melden Rembrandtplein</a><br>
+        <a href="/voorbeelden/tourbuzz">Tourbuzz</a><br>
+        <a href="/voorbeelden/armoede">Aanpak Armoede</a><br>
+        <a href="/voorbeelden/straatnotes">StraatNotes</a><br>
+        <a href="/voorbeelden/cleanstreet">clean street</a><br>
+        <a href="/voorbeelden/vraagmij">VraagMij</a><br>
+        <a href="/voorbeelden/digidossier">Digidossier Schuldhulp</a>
+    </p>
+</div></div>
+
+<div class="spaced">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+    .ts__footer {
+        font-family: Roboto, sans-serif;
+        font-size: 0.9em;
+        line-height: 1.4em;
+        min-height: 320px;
+        margin-top: 60px;
+    }
+</style>
+<footer class="ts__footer">
+    <h2>Over TiltShift</h2>
+    <p>TiltShift is een collectief van creatieve, sociale techneuten. Met design en code maken we oplossingen voor complexe problemen en creëren we innovatieve digitale producten en diensten. Daarbij stellen we de mens altijd centraal.</p>
+    <p>Vanuit onze ervaring adviseren we graag over de mogelijkheden (en onmogelijkheden) van digitale techniek en data voor innovatie en digitale transformatie.</p>
+</footer></div>
+
+</body>
+</html>
