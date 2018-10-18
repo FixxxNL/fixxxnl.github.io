@@ -1,0 +1,98 @@
+.text-title-big {
+  font-size: 36px;
+  line-height: 1.4em;
+}
+.intro-container {
+  padding-bottom: 15px;
+  padding-top: 180px;
+}
+
+.intro-text-no-margin {
+    margin-bottom: 10px;
+}
+
+.bg-angled {
+  min-height: 100vh;
+}
+
+.layout-fullscreen {
+  overflow: scroll;
+}
+
+.featured {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.cross {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 40px;
+}
+
+.quote {
+  padding: 2em 0;
+}
+.text-body {
+  margin-top: 0.8em;
+}
+
+.member-list {
+    max-width: 75%;
+    padding-top: 10px;
+    clear: both;
+    padding-left: 360px;
+    margin-top: 40px
+}
+
+.tsbanner {
+  max-width: 200px;
+}
+
+.text-title-small {
+  margin-top: 40px;
+}
+
+.timeline-text {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 460px) {
+    .member-list {
+        max-width: 90%;
+        padding-top: 10px;
+        padding-left: 40px;
+        margin-top: 40px;
+    }
+    .member {
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 1060px) {
+  .layout-midlane {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .timeline {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+  }
+  .member-list {
+      padding-left: 100px;
+      padding-right: 100px;
+      max-width: 100%;
+  }
+  .layout-menu {
+    flex-direction: column-reverse;
+  }
+  .bigtheme-item {
+    font-size: 32px;
+    padding-right: 0;
+  }
+  .layout-contact {
+    padding-bottom: 0
+  }
+}

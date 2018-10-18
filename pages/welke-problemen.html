@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /welke-problemen
+title: Welke problemen
+beschrijving: Om problemen op te kunnen lossen, is het belangrijk om te weten met wat voor problemen je te maken hebt. Fixxx focust op concrete problemen die nu spelen.
+order: 1
+pars:
+- title:
+  body:
+    - Om problemen op te kunnen lossen, is het belangrijk om te weten wat voor probleem je voor je hebt, en op basis daarvan de juiste methode te kiezen.
+    - De Fixxx methode richt zich op concrete problemen die nu spelen, vaak door veroudering van systemen en werkwijzen.
+    - "Concreet wil zeggen: er zijn mensen die zodanig last hebben van het probleem, dat ze gemotiveerd zijn om actief aan de slag te gaan om het op te lossen."
+    - Daarnaast is het belangrijk dat er mandaat is om systemen en werkwijzen aan te passen, en hiermee te experimenteren.
+  img: /assets/img/problemen-sessie.jpg
+- title: Workshop "probleemselectie"
+  body:
+    - Om te helpen bij het goed in kaart brengen van problemen, organiseert TiltShift workshops.
+    - Neem voor meer informatie contact op met Maarten Geraets, <a href="tel:+31650222771">+31650222771</a> of <a href="mailto:maarten@tiltshift.nl">maarten@tiltshift.nl</a>.
+---
+<div class="layout-midlane">
+  <section class="project-list">
+    <div class="grid-wrapper">
+      <div class="project-list-intro">
+        <h1 class="text-title">{{ page.title }}</h1>
+
+        {% for p in page.pars %}
+
+          <h2 class="text-title-small">{{ p.title }}</h2>
+
+          {% for line in p.body %}
+
+            <p class="text-body">{{ line }}</p>
+
+          {% endfor %}
+
+          {% if p.img %}
+            <center><img src="{{ p.img }}" style="margin: 40px auto"></center>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

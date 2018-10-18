@@ -1,0 +1,6 @@
+{% assign pages = site.pages | sort:"order" %}
+{% for page in pages %}
+{% if page.order %}
+<a href="{{ page.url }}" class="{{ class }}" data-transition="{{ page.url }}">{{ page.title }}</a>
+{% endif %}
+{% endfor %}

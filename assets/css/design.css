@@ -1,0 +1,241 @@
+html, body {
+    font-family: "Macho", Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    background: blue;
+    background: #F4EFEF;
+    color: #383636;
+}
+section,
+.wrapper {
+    position: relative;
+    max-width: 40em;
+    margin: 0 auto;
+}
+i {
+    font-style: italic;
+}
+header {
+    text-align: center;
+    padding-bottom: 25px;
+}
+header h1 {
+    height: 90px;
+}
+header h1 img {
+    width: 137px;
+    position: absolute;
+    right: 36px;
+}
+header h2 {
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+main > div {
+    background: #FAF8F7;
+}
+main > div:nth-child(even) {
+    background: #F4EFEF;
+}
+
+section::before {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 5px;
+    background: #A9A2A2;
+}
+section {
+    padding-bottom: 25px;
+}
+section span {
+    font-weight: 700;
+}
+section h2,
+section h3 {
+    font-weight: 700;
+}
+section h2,
+section p {
+    margin: 8px 13px 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.partners ul {
+    list-style: none;
+}
+.partners li {
+    width: 100%;
+    text-align: center;
+}
+
+em {
+    font-style: italic;
+}
+
+/* ICON */
+.icon {
+    vertical-align: middle;
+    margin: 4px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    max-width: 274px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #E8443A;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #E8443A;
+    background: #FDFDFD;
+}
+.cta-button {
+    background: #E8443A;
+    color: #FFFFFF;
+}
+.buttons-col-2 > span {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+/* WERK / OPLOSSING */
+
+.oplossing {
+    margin: 0 22px 15px; /* same as p */
+    background: #FDFDFD;
+    padding: 8px 8px 22px;
+    border-bottom: 2px solid #A9A2A2;
+}
+.oplossing h3 {
+    color: #2DA3DA;
+    line-height: 2em;
+}
+.oplossing > div {
+    width: 100%;
+    height: 14em;
+    background: #000000;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.oplossing > div > div {
+    width: 120px;
+    height: 60px;
+    background: #2DA3DA;
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    opacity: 0.9;
+    line-height: 1em;
+    text-align: center;
+}
+
+/* TEAM / PROF */
+
+.prof {
+    width: 120px;
+    height: 190px;
+    margin: 8px 4px;
+    background: #FDFDFD;
+    padding: 8px;
+    border-bottom: 2px solid #A9A2A2;
+    display: inline-block;
+    vertical-align: top;
+}
+.prof > .photo {
+    width: 100%;
+    height: 150px;
+    background: #000000;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prof > .photo > span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #644C9A;
+    text-align: center;
+    line-height: 2em;
+    opacity: 0.9;
+}
+.prof > .photo > span a {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+.prof > .name {
+    text-align: center;
+    display: table-cell;
+    height: 40px;
+    width: 120px;
+    vertical-align: middle;
+    color: #383636;
+}
+
+/* COLORS */
+
+section.tiltshift::before {
+    background: #E8443A;
+}
+
+section.methode::before {
+    background: #F59925;
+}
+section.methode h2 {
+    color: #F59925;
+}
+section.methode span {
+    color: #F59925;
+}
+
+section.oplossingen::before {
+    background: #2DA3DA;
+}
+section.oplossingen h2 {
+    color: #2DA3DA;
+}
+
+section.team::before {
+    background: #644C9A;
+}
+section.team h2 {
+    color: #644C9A;
+}
+section.team span {
+    color: #644C9A;
+}
+
+section.contact::before {
+    background: #E8443A;
+}
+section.contact h2 {
+    color: #E8443A;
+}
+section.contact > div {
+    background: #E8443A;
+    color: #FDFDFD;
+    padding-bottom: 15px;
+}
+section.contact a {
+    text-decoration: none;
+    color: #FDFDFD;
+}
+section.contact p {
+    margin-bottom: 4px;
+}

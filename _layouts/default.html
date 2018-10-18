@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="nl">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    <div class="js-replace bg-angled" style="display: none">
+      {{ content }}
+    </div>
+
+    <!-- <img src="/assets/img/tiltshift-bg-angled.svg" style="display: none"> -->
+
+    {% include post_load.html %}
+
+  </body>
+</html>

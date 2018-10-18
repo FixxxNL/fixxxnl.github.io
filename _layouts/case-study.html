@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    <div class="js-replace bg-angled" style="display: none">
+      <div class="layout-ovlink">
+        <a href="/case-studies" class="ovlink">&larr; terug naar case studies</a>
+      </div>
+      <header class="project-header">
+        <div class="layout-project-header">
+          <div class="project-header-description">
+            <h2 class="project-header-title">{{ page.title }}</h2>
+            <p>{{ page.teaser }}</p>
+            <p class="project-header-readmore">
+              Meer weten over dit project?<br>
+              <span class="project-header-call">
+                <a href="tel:0207220207">Bel 020 722 02 07</a>
+              </span>
+            <p>
+            {% if page.pdf %}
+            <p class="project-header-readmore">
+              <a style="text-decoration: underline" href="{{ page.pdf }}">Of download de PDF.</a>
+            </p>
+            {% endif %}
+          </div>
+          <div class="project-header-image" style="background-image:url(/assets/img/{{ page.img }})"></div>
+        </div>
+      </header>
+      <section class="timeline">
+        <div class="grid-wrapper">
+          <div class="grid-col-1-1">
+
+            {% for fase in page.fases %}
+            <div class="timeline-week "> <img src="/assets/img/timeline-oval.svg" class="timeline-oval">
+              <h2 class="timeline-title">{{ fase.naam }}</h2>
+              {% for p in fase.beschrijving %}
+              <p class="timeline-text">{{ p }}</p>
+              {% endfor %}
+              {% if fase.img %}
+              <img src="/assets/img/{{ fase.img }}" class="timeline-image">
+              {% endif %}
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </section>
+
+      <!--
+      <div class="member-list">
+        <div class="grid-wrapper">
+          {% assign fixxxers = site.data.mensen.fixxxers %}
+          {% for fixxxer in fixxxers %}
+            {% if page.team contains fixxxer[0] %}
+            {% assign F = fixxxer[1] %}
+            <div class="member">
+              <div class="member-avatar-container">
+                <img src="/assets/img/{{ F.img }}" class="member-avatar">
+              </div>
+              <div class="member-info-container">
+                <div class="member-name">{{ F.naam }}</div>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+      -->
+
+      {% include footer.html %}
+    </div>
+
+    <!-- <img src="/assets/img/tiltshift-bg-angled.svg" style="display: none"> -->
+
+    {% include post_load.html %}
+
+  </body>
+</html>

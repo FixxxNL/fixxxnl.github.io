@@ -1,0 +1,45 @@
+fixxxers:
+  mg:
+    naam: Maarten
+    sn: Geraets
+    img: fixxxers/maarten-geraets.jpg
+  ydm:
+    naam: Yvonne
+    sn: de Meij
+    img: fixxxers/yvonne.png
+  mdk:
+    naam: Maarten
+    sn: de Keizer
+    img: fixxxers/maarten.jpg
+  jg:
+    naam: Johan
+    sn: Groenen
+    img: fixxxers/johan.jpg
+  kn:
+    naam: Kamiel
+    sn: Naaktgeboren
+    img: fixxxers/kamiel.jpg
+  az:
+    naam: Adriaan
+    sn: Zwiers
+    img: fixxxers/adriaan.jpg
+  kh:
+    naam: Krijn
+    sn: Hoetmer
+    img: fixxxers/krijn.jpg
+  rv:
+    naam: Rik
+    sn: Vegt
+    img: fixxxers/rik.jpg
+  pb:
+    naam: Peter
+    sn: Boer
+    img: fixxxers/peter.jpg
+  rd:
+    naam: Rutger
+    sn: Dik
+    img: fixxxers/rutger.jpg
+  mgui:
+    naam: Maurice
+    sn: Guikema
+    img: fixxxers/maurice.jpg

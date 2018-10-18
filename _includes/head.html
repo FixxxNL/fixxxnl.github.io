@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicon -->
+  <link rel='shortcut icon' type='image/png' href='/assets/img/favicon.png'>
+
+  <!-- style -->
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/tiltshift.css">
+  <link rel="stylesheet" href="/assets/css/tiltshift_remarks_johan.css">
+
+  <!-- scripts -->
+  <script src="/assets/js/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/transitions.js"></script>
+
+  <!-- meta stuff -->
+  <!-- <meta property='og:url' content='https://www.tiltshift.nl'> -->
+  <!-- <meta property='site_name' content='TiltShift - {{ page.title }}'> -->
+
+  <meta name='title' content='{{ page.title }}'>
+  <meta property='og:title' content='{{ page.title }}'>
+
+  {% if page.beschrijving %}
+  <meta property='og:description' content='{{ page.beschrijving }}'>
+  <meta name='description' content='{{ page.beschrijving }}'>
+  {% elsif page.teaser %}
+  <meta property='og:description' content='{{ page.teaser }}'>
+  <meta name='description' content='{{ page.teaser }}'>
+  {% else %}
+  <meta property='og:description' content='Snelle innovatie die werkt met Fixxx!'>
+  <meta name='description' content='Snelle innovatie die werkt met Fixxx!'>
+  {% endif %}
+
+  {% if page.img %}
+  <meta property='og:image' content='/assets/img/{{ page.img }}'>
+  <link rel='image_src' href='/assets/img/{{ page.img }}'>
+  {% else %}
+  <meta property='og:image' content='/assets/img/innovatie/straatnotes1.png'>
+  <link rel='image_src' href='/assets/img/innovatie/straatnotes1.png'>
+  {% endif %}
+
+  <meta name='keywords' content='innovatie methode, lean startup, design thinking, systems thinking, service design'>
+</head>

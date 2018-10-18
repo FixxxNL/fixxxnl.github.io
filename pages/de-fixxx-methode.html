@@ -1,0 +1,53 @@
+---
+layout: default
+permalink: /de-fixxx-methode
+title: De Fixxx methode
+beschrijving: In 3 maanden van probleem naar werkende oplossing met de Fixxx methode.
+order: 2
+pars:
+- title:
+  body:
+    - Veel organisaties lopen tegen het probleem aan dat innovatie niet beklijft. Daarvoor zijn veel verschillende oorzaken aan te wijzen, zoals te weinig betrokkenheid van de business, praktische problemen bij de implementatie, of te weinig meerwaarde voor management.
+    - Fixxx combineert methoden en technieken uit de wereld van tech startups, zoals design thinking, service design, lean startup en agile development, die helpen deze risico's snel in kaart te brengen en er oplossingen voor te ontwerpen.
+    - In een traject van 3 maanden ontwikkelt een multi-disciplinair team van designers, developers en uitvoerende medewerkers een werkende oplossing voor een tastbaar probleem.
+  img: /assets/img/Fixxx_methode.png
+- title: Discovery
+  body:
+    - De eerste twee weken dompelt het hele team zich onder in het probleemdomein. We lopen mee op de werkvloer, gaan mee de straat op, praten met alle betrokken partijen en brengen alle stakeholders, processen en systemen in kaart, en alle (grote en kleine) problemen die we tegenkomen. Op die manier weet iedereen precies wat er speelt, en wat er leeft.
+  img: /assets/img/strategie/mapping.jpg
+- title: Ideation / Design Sprint
+  body:
+    - "In een intensieve sprint van één week gaan we op zoek naar zoveel mogelijk verschillende oplossingen voor de belangrijkste problemen die we tegen zijn gekomen. Daarbij is het doel het ontwerpen van een aantal papieren prototypes van <em>Minimum Viable Solutions</em>: oplossingen die klein genoeg zijn om er in één week een werkende minimale versie van te ontwikkelen."
+  img: /assets/img/ideation-board.jpg
+- title: Implementatie
+  body:
+    - Op basis van één van deze prototypes ontwikkelen we vervolgens ook daadwerkelijk in week 1 een werkende versie, die we direct op de werkvloer introduceren. Dat levert (natuurlijk) de nodige klachten op. En dat is goed. Deze feedback zetten we in de volgende week namelijk om in concrete aanpassingen. Zo transformeert het prototype gedurende de 8 weken/sprints in een oplossing die écht werkt.
+  img: /assets/img/direct-melden.jpg
+---
+<div class="layout-midlane">
+  <section class="project-list">
+    <div class="grid-wrapper">
+      <div class="project-list-intro">
+        <h1 class="text-title">{{ page.title }}</h1>
+
+        {% for p in page.pars %}
+
+          {% if p.title %}
+          <h2 class="text-title-small">{{ p.title }}</h2>
+          {% endif %}
+
+          {% for line in p.body %}
+
+            <p class="text-body">{{ line }}</p>
+
+          {% endfor %}
+
+          {% if p.img %}
+            <center><img src="{{ p.img }}" style="margin: 40px auto"></center>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

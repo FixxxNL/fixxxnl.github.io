@@ -1,0 +1,48 @@
+---
+layout: default
+permalink: /case-studies
+title: Case studies
+beschrijving: Case studies van Fixxx trajecten bij de gemeente Amsterdam.
+order: 3
+pars:
+- title:
+  body:
+    - De gemeente Amsterdam zet de Fixxx methode al sinds 2015 in voor het oplossen van concrete problemen.
+    - Hoe dat in de praktijk verloopt kun je lezen in onderstaande case studies.
+  img:
+---
+<div class="layout-midlane">
+  <section class="project-list">
+    <div class="grid-wrapper">
+      <div class="project-list-intro">
+        <h1 class="text-title">{{ page.title }}</h1>
+
+        {% for p in page.pars %}
+
+          <h2 class="text-title-small">{{ p.title }}</h2>
+
+          {% for line in p.body %}
+
+            <p class="text-body">{{ line }}</p>
+
+          {% endfor %}
+
+          {% if p.img %}
+            <center><img src="{{ p.img }}" style="margin: 40px auto"></center>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+      {% for item in site.casestudies %}
+      <div class="project-item project-item-reversed">
+        <div class="project-image-container" style="background-image: url(/assets/img/{{ item.img }})"> </div>
+        <div class="project-text-container">
+          <h2 class="project-title">{{ item.title }}</h2>
+          <p class="project-teaser">{{ item.teaser }}</p>
+          <a href="/{{ item.permalink }}" class="whitebox-button" style="margin-top: 30px">Bekijk deze case study</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
