@@ -1,14 +1,26 @@
 ---
 layout: default
-permalink: /case-studies
-title: Case studies
-beschrijving: Case studies van Fixxx trajecten bij de gemeente Amsterdam.
+permalink: /voorbereiding
+title: Voorbereiding
+beschrijving: Fase 0 van iedere Fixxx is voorbereiding
+order: 1
 pars:
 - title:
   body:
-    - De gemeente Amsterdam zet de Fixxx methode al sinds 2015 in voor het oplossen van concrete problemen.
-    - Hoe dat in de praktijk verloopt kun je lezen in onderstaande case studies.
+    - Alvorens een Fixxx te starten, is goede voorbereiding essentieel.
+    -
   img:
+- title: organisatie
+  body:
+    - het juiste team
+    - een geschikte werkplek
+    - de goede contacten
+    - duidelijke verwachtingen
+    - duidelijke werkafspraken
+- title: kwartiermaken
+  body:
+    - de planning
+    - de ruimte voorbereiden
 ---
 <div class="layout-midlane">
   <section class="project-list">
@@ -32,7 +44,7 @@ pars:
 
         {% endfor %}
       </div>
-      {% for item in site.casestudies %}
+      {% for item in site.casestudies.disable %}
       <div class="project-item project-item-reversed">
         <div class="project-image-container" style="background-image: url(/assets/img/{{ item.img }})"> </div>
         <div class="project-text-container">

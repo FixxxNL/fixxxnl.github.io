@@ -1,0 +1,76 @@
+---
+layout: default
+permalink: /discovery
+title: "Week 1 en 2: Discovery"
+beschrijving: leer het probleem beter kennen tijdens de Discovery fase
+order: 2
+pars:
+
+- title: Waarom doen we dit?
+  body:
+    - het doel van de discovery is zorgen dat het team snapt wat het probleem is, zowel rationeel als empathisch
+    - "daarvoor is het belangrijk om te begrijpen hoe het domein functioneert: organisatie, processen, systemen in kaart, en ook mee te voelen met de mensen en hun ideeën, angsten, verwachtingen en frustraties"
+    - daarnaast moeten we een oprechte relatie opbouwen met de betrokken personen, zodat we intensief kunnen gaan samenwerken aan het verzinnen, maken, en implementeren van een oplossing die werkt voor hun
+    - het is belangrijk om de doelen, "soll", het "grote" probleem, van de opdrachtgever goed te snappen, maar niet leidend te laten zijn
+    - heb oog voor alle kleine problemen, kansen, verwachtingen, irritaties, en zoek naar overlap en gedeelde belangen, want daar zit vaak het begin van verandering
+  img:
+- title: Wat gaan we maken?
+  body:
+    - overzicht van doelen met het doelencanvas (belangrijkste KPI)
+    - overzicht van belangen met de stakeholder map (welke krachten spelen er)
+    - verslag van interviews op basis van empathy maps
+    - overzicht van proces(sen), systemen en problemen met procesmap
+    - zicht op de meest prangende problemen met dot voting
+- title: de kick-off
+  body:
+    - doelensessie
+    - krachtenveld sessie
+    - interviews
+  img:
+- title: meelopen en interviews
+  body:
+    - interviewtechnieken
+    - nabespreken met empathymaps
+- title: principes en valkuilen
+  body:
+    - get out of the building (loop mee, kijk op locatie, interview op het werk)
+    - observeer en blijf open staan (niet convergeren, geen voorbarige conclusies)
+    - pas op voor confirmation bias en sturen
+    - kies geen kant
+    - luister naar wat mensen zeggen, maar kijk vooral ook naar wat ze doen
+---
+<div class="layout-midlane">
+  <section class="project-list">
+    <div class="grid-wrapper">
+      <div class="project-list-intro">
+        <h1 class="text-title">{{ page.title }}</h1>
+
+        {% for p in page.pars %}
+
+          <h2 class="text-title-small">{{ p.title }}</h2>
+
+          {% for line in p.body %}
+
+            <p class="text-body">{{ line }}</p>
+
+          {% endfor %}
+
+          {% if p.img %}
+            <center><img src="{{ p.img }}" style="margin: 40px auto"></center>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+      {% for item in site.casestudies.disabled %}
+      <div class="project-item project-item-reversed">
+        <div class="project-image-container" style="background-image: url(/assets/img/{{ item.img }})"> </div>
+        <div class="project-text-container">
+          <h2 class="project-title">{{ item.title }}</h2>
+          <p class="project-teaser">{{ item.teaser }}</p>
+          <a href="/{{ item.permalink }}" class="whitebox-button" style="margin-top: 30px">Bekijk deze case study</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>

@@ -1,0 +1,69 @@
+---
+layout: default
+permalink: /intake
+title: Intake
+beschrijving: "moeten we dit wel Fixxx'en?"
+order: 0
+pars:
+- title: Moeten we dit wel Fixxx'en?
+  body:
+    - Het succes van een Fixxx traject hangt in grote mate af van het goed uitkiezen van de problemen de je ermee gaat oplossen.
+    - Niet ieder probleem is klaar om "geFixxxt" te worden. Soms is het nog te vroeg en leeft het probleem eigenlijk nog niet echt. Of wíllen mensen helemaal geen oplossing. Ook kan het zijn dat digitale innovatie helemaal geen realistische oplossingsrichting is. En soms blijkt het probleem zelfs geen probleem te zijn.
+    - "Om ervoor te zorgen dat we onze tijd niet verspillen aan kansloze projecten hebben we een aantal indicatoren waar we op letten tijdens de intake:"
+  img:
+- title: Is er/het wel écht, concreet een probleem?
+  body:
+    - Zijn er mensen die iedere dag godverrend naar hun werk gaan omdat dit probleem er is. Als het probleem niet snel wordt opgelost, zijn er dan grote negatieve effecten? Is het concreet genoeg om me mee te nemen en het te laten zien? Is dit uberhaupt een probleem?
+    - De Fixxx aanpak is probleemgedreven. Dat is zo omdat we oplossingen bedenken en implementeren vanuit de bestaande processen, met die mensen samen. Dat kan alleen snel en effectief als we ons richten op iets wat echt speelt.
+- title: Kunnen wij het wel oplossen?
+  body:
+    - Hebben we het team om dit probleem op te lossen? Kun je je bij het aanhoren van dit probleem een beetje voorstellen dat we iets zinvols kunnen bedenken en uitvoeren?
+    - We hebben een team met developers, designers, veranderkundigen. Als die niet op een zinnige manier kunnen bijdragen vanuit hun expertise, dan moeten we dit niet doen.
+- title: Zijn er gemotiveerde mensen mee te werken?
+  body:
+    - "OK, dus er is écht iets aan de hand. Met wie kunnen we praten of meelopen om te zien wat er mis is? En als dat midden in de nacht is, mag het dan nog? Wie zijn er verder nog betrokken, is dat duidelijk?"
+    - De Fixxx begint met twee weken intensief meelopen en interviews. Daarvoor is het dus nodig om alle partijen al goed op de korrel te hebben, en het liefst al aan boord.
+- title: Is er mandaat om het écht op te lossen?
+  body:
+    - Stel we verzinnen een oplossing, dan gaan we die in de praktijk testen. Met echte mensen. In het echt. We hebben geen tijd om daarvoor allerhande moeilijke aanvraagprocedures te volgen. Gaat dat lukken?
+    - Om snel te kunnen werken hebben we mandaat nodig van hoog in de boom om veranderingen door te voeren op de werkvloer en in de dienstverlening, zonder constante ruggespraak.
+- title: Mag het falen?
+  body:
+    - Mag het een keer mis gaan? Of zijn de gevolgen dan niet te overzien?
+    - Fixxx is een innovatiemethode. Dat wil zeggen dat er ook inherent risico's zijn en worden opgezocht om te zorgen dat we op nieuwe plekken uitkomen.
+---
+<div class="layout-midlane">
+  <section class="project-list">
+    <div class="grid-wrapper">
+      <div class="project-list-intro">
+        <h1 class="text-title">{{ page.title }}</h1>
+
+        {% for p in page.pars %}
+
+          <h2 class="text-title-small">{{ p.title }}</h2>
+
+          {% for line in p.body %}
+
+            <p class="text-body">{{ line }}</p>
+
+          {% endfor %}
+
+          {% if p.img %}
+            <center><img src="{{ p.img }}" style="margin: 40px auto"></center>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+      {% for item in site.casestudies %}
+      <div class="project-item project-item-reversed">
+        <div class="project-image-container" style="background-image: url(/assets/img/{{ item.img }})"> </div>
+        <div class="project-text-container">
+          <h2 class="project-title">{{ item.title }}</h2>
+          <p class="project-teaser">{{ item.teaser }}</p>
+          <a href="/{{ item.permalink }}" class="whitebox-button" style="margin-top: 30px">Bekijk deze case study</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
